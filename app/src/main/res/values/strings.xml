@@ -1,0 +1,41 @@
+<resources>
+    <string name="app_name">My ApplicationDip</string>
+    <string name="enter_gender">Выберите пол</string>
+    <string name="man">Мужской</string>
+    <string name="girl">Женский</string>
+    <string name="further">Далее</string>
+    <string name="enter_weight">Введите вес</string>
+    <string name="enter_height">Введите рост</string>
+    <string name="enter_age">Введите возраст</string>
+
+    <string name="gender">Пол</string>
+    <string name="weight">Вес</string>
+    <string name="height">Рост</string>
+    <string name="age">Возраст</string>
+    <string name="lifestyle">Ваш образ жизни</string>
+
+    <string name="enter_lifestyle">Какой ваш образ жизни?</string>
+    <string name="blank_fiend">Заполните поле корректно</string>
+    <string name="active">Активный(Легкие нагрузки)</string>
+    <string name="actives">Активный</string>
+    <string name="very_active">Очень активный(Ежедневные нагрузки)</string>
+    <string name="very_actives">Очень активный</string>
+    <string name="not_active">Минимальные нагрузки (сидячая работа)</string>
+    <string name="nots_active">Мало активен</string>
+    <string name="metabolism">Величина основного обмена веществ :</string>
+    <string name="calorie_calculation">Рассчитать кол-во калорий для поддержания веса</string>
+    <string name="refil">Заполнить заново</string>
+    <string name="calories_bzu">Калории и БЖУ</string>
+    <string name="proteins">Белки</string>
+    <string name="fats">Жиры</string>
+    <string name="carbohydrates">Углеводы</string>
+    <string name="back">Назад</string>
+    <string name="save">Сохранить</string>
+    <string name="out_five">из 5</string>
+    <string name="calculation_Mufflin_form">Расчет был выполнен по формуле Маффлина Сан-Жеора</string>
+
+    <string name="open_nav">Open Navigation Drawer</string>
+    <string name="close_nav">Close Navigation Drawer</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>
