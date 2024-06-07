@@ -21,12 +21,6 @@ class FirstUser : AppCompatActivity() {
         bin = ActivityFirstUserBinding.inflate(layoutInflater)
         setContentView(bin.root)
 
-        person = dB.readDbData()
-        if(person.age != 0){
-            var int = Intent(this, Prifile::class.java)
-            startActivity(int)
-        }
-
         bin.editText.visibility = View.GONE
         bin.btFurther.visibility = View.GONE
         bin.LayBtHoise3.visibility = View.GONE
