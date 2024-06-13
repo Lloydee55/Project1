@@ -1,9 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@drawable/blue_fone"
     tools:context=".fragments.HomeFragment">
 
     <!-- TODO: Update blank fragment layout -->
@@ -13,8 +14,8 @@
         android:id="@+id/tvWeight"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="19dp"
-        android:layout_marginTop="208dp"
+        android:layout_marginStart="25dp"
+        android:layout_marginTop="160dp"
         android:layout_marginEnd="359dp"
         android:text="@string/weight"
         android:textSize="20sp"
@@ -22,128 +23,160 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
-    <EditText
-        android:id="@+id/editTextText2"
-        android:layout_width="wrap_content"
-        android:layout_height="45dp"
-        android:layout_marginStart="105dp"
-        android:layout_marginTop="14dp"
-        android:layout_marginEnd="17dp"
-        android:ems="10"
-        android:gravity="right"
-        android:inputType="text"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/tvGender"
-        app:layout_constraintTop_toBottomOf="@+id/editTextText1" />
-
     <TextView
         android:id="@+id/tvHeight"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="19dp"
         android:layout_marginTop="32dp"
         android:layout_marginEnd="326dp"
         android:text="@string/height"
         android:textSize="20sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/tvWeight"
         app:layout_constraintTop_toBottomOf="@+id/tvWeight" />
-
-    <EditText
-        android:id="@+id/editTextText1"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="100dp"
-        android:layout_marginTop="16dp"
-        android:layout_marginEnd="15dp"
-        android:ems="10"
-        android:gravity="right"
-        android:inputType="text"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/tvHeight"
-        app:layout_constraintTop_toBottomOf="@+id/editTextText4" />
-
-    <TextView
-        android:id="@+id/tvAge"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="28dp"
-        android:layout_marginEnd="82dp"
-        android:text="@string/age"
-        android:textSize="20sp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.063"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/tvGender" />
-
-    <TextView
-        android:id="@+id/tvLifestyle"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="28dp"
-        android:layout_marginEnd="204dp"
-        android:text="@string/lifestyle"
-        android:textSize="20sp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.39"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/tvAge" />
 
     <TextView
         android:id="@+id/tvGender"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="32dp"
-        android:layout_marginEnd="332dp"
         android:text="@string/gender"
         android:textSize="20sp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.463"
-        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/tvWeight"
         app:layout_constraintTop_toBottomOf="@+id/tvHeight" />
 
-    <EditText
-        android:id="@+id/editTextText5"
-        android:layout_width="0dp"
-        android:layout_height="45dp"
-        android:layout_marginStart="3dp"
-        android:layout_marginTop="6dp"
-        android:layout_marginEnd="15dp"
-        android:ems="10"
-        android:gravity="right"
-        android:inputType="text"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/tvLifestyle"
-        app:layout_constraintTop_toBottomOf="@+id/editTextText3" />
-
-    <EditText
-        android:id="@+id/editTextText3"
-        android:layout_width="0dp"
+    <TextView
+        android:id="@+id/tvAge"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="67dp"
-        android:layout_marginTop="14dp"
-        android:layout_marginEnd="16dp"
-        android:ems="10"
-        android:gravity="right"
-        android:inputType="text"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/tvAge"
-        app:layout_constraintTop_toBottomOf="@+id/editTextText2" />
-
-    <EditText
-        android:id="@+id/editTextText4"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="110dp"
-        android:layout_marginTop="196dp"
-        android:layout_marginEnd="16dp"
-        android:ems="10"
-        android:gravity="right"
-        android:inputType="text"
+        android:layout_marginTop="34dp"
+        android:text="@string/age"
+        android:textSize="20sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toEndOf="@+id/tvWeight"
+        app:layout_constraintStart_toStartOf="@+id/tvWeight"
+        app:layout_constraintTop_toBottomOf="@+id/tvGender" />
+
+    <TextView
+        android:id="@+id/tvLifestyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="34dp"
+        android:layout_marginEnd="204dp"
+        android:text="@string/lifestyle"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/tvAge"
+        app:layout_constraintTop_toBottomOf="@+id/tvAge" />
+
+    <EditText
+        android:id="@+id/edGender"
+        android:layout_width="0dp"
+        android:layout_height="45dp"
+        android:layout_marginTop="18dp"
+        android:background="@drawable/profile_edit_text"
+        android:ems="10"
+        android:gravity="center|right"
+        android:inputType="text"
+        android:paddingEnd="12dp"
+        app:layout_constraintEnd_toEndOf="@+id/edHeight"
+        app:layout_constraintStart_toStartOf="@+id/edHeight"
+        app:layout_constraintTop_toBottomOf="@+id/edHeight" />
+
+    <EditText
+        android:id="@+id/edHeight"
+        android:layout_width="0dp"
+        android:layout_height="45dp"
+        android:layout_marginTop="17dp"
+        android:background="@drawable/profile_edit_text"
+        android:ems="10"
+        android:gravity="center|right"
+        android:inputType="text"
+        android:paddingEnd="12dp"
+        app:layout_constraintEnd_toEndOf="@+id/edWeight"
+        app:layout_constraintStart_toStartOf="@+id/edWeight"
+        app:layout_constraintTop_toBottomOf="@+id/edWeight" />
+
+    <EditText
+        android:id="@+id/edActivity"
+        android:layout_width="0dp"
+        android:layout_height="45dp"
+        android:layout_marginTop="19dp"
+        android:background="@drawable/profile_edit_text"
+        android:ems="10"
+        android:gravity="center|right"
+        android:inputType="text"
+        android:paddingEnd="12dp"
+        app:layout_constraintEnd_toEndOf="@+id/edAge"
+        app:layout_constraintStart_toStartOf="@+id/edAge"
+        app:layout_constraintTop_toBottomOf="@+id/edAge" />
+
+    <EditText
+        android:id="@+id/edAge"
+        android:layout_width="0dp"
+        android:layout_height="45dp"
+        android:layout_marginTop="19dp"
+        android:background="@drawable/profile_edit_text"
+        android:ems="10"
+        android:gravity="center|right"
+        android:inputType="text"
+        android:paddingEnd="12dp"
+        app:layout_constraintEnd_toEndOf="@+id/edGender"
+        app:layout_constraintStart_toStartOf="@+id/edGender"
+        app:layout_constraintTop_toBottomOf="@+id/edGender" />
+
+    <EditText
+        android:id="@+id/edWeight"
+        android:layout_width="0dp"
+        android:layout_height="45dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="150dp"
+        android:layout_marginEnd="16dp"
+        android:background="@drawable/profile_edit_text"
+        android:ems="10"
+        android:gravity="center|right"
+        android:inputType="text"
+        android:paddingEnd="12dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="80dp"
+        android:text="@string/calorie_norm"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="@+id/edActivity"
+        app:layout_constraintStart_toStartOf="@+id/tvLifestyle"
+        app:layout_constraintTop_toBottomOf="@+id/edActivity" />
+
+    <TextView
+        android:id="@+id/tvNormCalories"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:textColor="@color/lavender"
+        android:textSize="40sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/textView8"
+        app:layout_constraintStart_toStartOf="@+id/textView8"
+        app:layout_constraintTop_toBottomOf="@+id/textView8" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/floatingActionButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="76dp"
+        android:layout_marginEnd="16dp"
+        android:clickable="true"
+        android:src="@android:drawable/ic_menu_edit"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:focusable="true" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

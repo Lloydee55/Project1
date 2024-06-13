@@ -30,13 +30,21 @@
     <string name="fats">Жиры</string>
     <string name="carbohydrates">Углеводы</string>
     <string name="back">Назад</string>
-    <string name="save">Сохранить</string>
     <string name="out_five">из 5</string>
     <string name="calculation_Mufflin_form">Расчет был выполнен по формуле Маффлина Сан-Жеора</string>
+
+    <string name="calorie_norm">Норма калорий</string>
+    <string name="number_meals">Давайте определимся, как часто вам удобно кушать?</string>
+    <string name="numbers_meals">Количество приемов пищи (от 2 до 4)</string>
+    <string name="meal_interval">Интервал приемов пищи (от 4 до 7 часов)</string>
 
     <string name="home">Главная</string>
     <string name="profile">Профиль</string>
     <string name="statist">Статистика</string>
+
+    <string name="lala">Слишком большой интервал</string>
+    <string name="dada">Слишком много приемов пищи</string>
+
 
     <string name="open_nav">Open Navigation Drawer</string>
     <string name="close_nav">Close Navigation Drawer</string>

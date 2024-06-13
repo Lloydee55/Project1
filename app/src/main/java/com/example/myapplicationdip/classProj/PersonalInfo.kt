@@ -1,6 +1,12 @@
 package com.example.myapplicationdip.classProj
 
 import android.content.Context
+import android.content.Intent
+import android.net.Uri
+import androidx.core.content.ContextCompat.startActivity
+import com.example.myapplicationdip.Constants.Constants
+import com.example.myapplicationdip.FoodConsumptionSchedule
+import com.example.myapplicationdip.MainActivity
 import com.example.myapplicationdip.R
 
 class PersonalInfo {
@@ -9,7 +15,11 @@ class PersonalInfo {
     var age = 0
     var gender = 0
     var physActRatio : Float = 0F
-private var s = ""
+    var norm_calorie = 0
+
+    var time = 0
+    var interval = 0
+
     fun getGender(context : Context) : String{
         if(gender == 0){
             return context.getString(R.string.man)

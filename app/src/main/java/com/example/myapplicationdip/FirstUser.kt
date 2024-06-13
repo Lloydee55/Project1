@@ -12,8 +12,8 @@ import com.example.myapplicationdip.db.DBHelperPerson
 
 class FirstUser : AppCompatActivity() {
     private var index  = 0
-    private var dB = DBHelperPerson(this, null)
     private var person = PersonalInfo()
+    val db = DBHelperPerson(this, null)
 
     private lateinit var bin : ActivityFirstUserBinding
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -118,19 +118,13 @@ class FirstUser : AppCompatActivity() {
 
         }else if(index >= 5){
             val result = bin.textResult.text.toString().toInt() * person.physActRatio
-            val result2 = result.toInt()
+            person.norm_calorie = result.toInt()
 
-            val db = DBHelperPerson(this, null)
-
+            val int = Intent(this, FoodConsumptionSchedule::class.java)
             person.apply {
-                db.addName(weight, height , age, physActRatio, gender)
+                db.addName(weight, height, age, physActRatio, gender, norm_calorie, time, interval)
             }
-            Toast.makeText(this, " Сохранено", Toast.LENGTH_LONG).show()
-
-            val int = Intent(this, CaloriesBzhu::class.java)
-            int.putExtra(Constants.TRANC_CAL_ACT, result2)
             startActivity(int)
-
         }
         else {
             person.physActRatio = 1.375F
@@ -145,7 +139,7 @@ class FirstUser : AppCompatActivity() {
             indexNext()
         }else if(index >= 5){
             index = 0
-            val intent = Intent(this, MainActivity::class.java)
+            val intent = Intent(this, FirstUser::class.java)
             startActivity(intent)
         }
         else {
